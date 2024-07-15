@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestão de Clientes</h1>
+    <form onsubmit="event.preventDefault(); processarCliente();">
+        <label for="nomeFuncionario">Nome do Funcionário:</label>
+        <input type="text" id="nomeFuncionario" name="nomeFuncionario" required><br><br>
+
+        <label for="nomeCliente">Nome do Cliente:</label>
+        <input type="text" id="nomeCliente" name="nomeCliente" required><br><br>
+
+        <label>Status do Cliente:</label><br>
+        <input type="radio" id="vivo" name="statusCliente" value="vivo" required>
+        <label for="vivo">Vivo</label><br>
+        <input type="radio" id="morto" name="statusCliente" value="morto">
+        <label for="morto">Morto</label><br><br>
+
+        <button type="submit">Processar Cliente</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
